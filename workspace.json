@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "defaultProject":"weather-api",
   "projects": {
     "weather-api": "apps/weather-api",
     "weather-api-test": "apps/weather-api-test"

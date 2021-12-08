@@ -43,11 +43,17 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
-    - name: Restore
-      run: dotnet restore
+    - name: install node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+      
+    - name: install nx dependencies
+      run: npm install
+    
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: npm run-script build
 
     - name: Test
-      run: dotnet test
+      run: npm run-script test
