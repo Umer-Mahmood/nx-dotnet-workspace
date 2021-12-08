@@ -1,0 +1,35 @@
+{
+  "root": "apps/weather-api",
+  "projectType": "application",
+  "sourceRoot": "apps/weather-api",
+  "targets": {
+    "build": {
+      "executor": "@nx-dotnet/core:build",
+      "outputs": ["{options.output}"],
+      "options": {
+        "output": "dist/apps/weather-api",
+        "configuration": "Debug"
+      },
+      "configurations": {
+        "production": {
+          "configuration": "Release"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx-dotnet/core:serve",
+      "options": {
+        "configuration": "Debug"
+      },
+      "configurations": {
+        "production": {
+          "configuration": "Release"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx-dotnet/core:format"
+    }
+  },
+  "tags": ["nx-dotnet"]
+}

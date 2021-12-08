@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{0AB7574D-395B-4D3E-AC11-FAB843AA9540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umer.WeatherApi", "apps\weather-api\Umer.WeatherApi.csproj", "{C56A2A27-4E6B-4C9D-B73E-303202D5D411}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C56A2A27-4E6B-4C9D-B73E-303202D5D411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56A2A27-4E6B-4C9D-B73E-303202D5D411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56A2A27-4E6B-4C9D-B73E-303202D5D411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56A2A27-4E6B-4C9D-B73E-303202D5D411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C56A2A27-4E6B-4C9D-B73E-303202D5D411} = {0AB7574D-395B-4D3E-AC11-FAB843AA9540}
+	EndGlobalSection
+EndGlobal
