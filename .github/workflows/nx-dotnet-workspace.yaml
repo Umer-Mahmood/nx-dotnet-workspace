@@ -5,23 +5,23 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
+      # - '**/*.md'
+      # - '**/*.gitignore'
+      # - '**/*.gitattributes'
   pull_request:
     branches:
       - main
     paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
+      # - '**/*.md'
+      # - '**/*.gitignore'
+      # - '**/*.gitattributes'
   workflow_dispatch:
     branches:
       - main
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
+    # paths-ignore:
+    #   - '**/*.md'
+    #   - '**/*.gitignore'
+    #   - '**/*.gitattributes'
       
 jobs:
   build:
@@ -51,9 +51,11 @@ jobs:
     - name: install nx dependencies
       run: npm install
     
+    - name: run custom script
+      run: node test.js
 
-    - name: Build
-      run: npm run-script build
+    # - name: Build
+    #   run: npm run-script build
 
-    - name: Test
-      run: npm run-script test
+    # - name: Test
+    #   run: npm run-script test
