@@ -12,4 +12,12 @@ function IsCiOnPlatform(platformName) {
     );
     }
 
+function isEnvVarSet(variableName) {
+    return (
+        process.env[variableName] !== undefined &&
+        process.env[variableName] !== 'false' &&
+        process.env[variableName] !== '0'
+    );
+    }
+
 main();
