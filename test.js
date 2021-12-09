@@ -1,6 +1,6 @@
 function main(){
     console.log("hello");
-    var resp = IsCiOnPlatform('windows');
+    var resp = IsCiOnPlatform('Windows');
     console.log("response:",resp);
 }
 
