@@ -24,6 +24,13 @@ on:
     #   - '**/*.gitattributes'
       
 jobs:
+  test:
+    name: testjob
+    runs-on: windows-latest
+    steps:
+    - name: dummy steü
+      run: echo "dummy step"
+      shell: bash
   build:
     if: false
     name: Build 
