@@ -25,6 +25,7 @@ on:
       
 jobs:
   build:
+    if: false
     name: Build 
     runs-on: windows-latest
     env:
