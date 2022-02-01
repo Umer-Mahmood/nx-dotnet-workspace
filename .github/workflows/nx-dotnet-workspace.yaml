@@ -32,7 +32,7 @@ jobs:
       run: echo "dummy step"
       shell: bash
   build:
-    if: false
+    if: true
     name: Build 
     runs-on: windows-2022
     env:
